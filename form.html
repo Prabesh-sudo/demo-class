@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AMAN KO FORM</h1>
+    <form action="submit-data.php" method="post">
+        <div>
+        <label for="name">Enter your Name:</label>
+        <input type="text" id="name" name="name">
+        </div><br>
+        <div>
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email">
+        </div><br>
+        <div>
+        <label for="password">Enter your Password:</label>
+        <input type="password" id="password" name="password">
+        </div><br>
+        <div>
+            <lable for="radio">Select your Gender:</lable>
+            <input type="radio" id=""radio" name="gender" value="male">Male
+            <input type="radio" id=""radio" name="gender" value="female">Female
+        </div><br>
+        <div>
+            <label for="checkbox">Select your Hobbies:</label>
+            <input type="checkbox" id="checkbox" name="hobbies" value="reading">Reading
+            <input type="checkbox" id="checkbox" name="hobbies" value="traveling">Traveling
+            <input type="checkbox" id="checkbox" name="hobbies" value="sports">Sports
+        </div><br>
+        <fieldset>
+            <legend>Select your religion:</legend>
+                <input type="radio"
+                >Hindu
+                <input type="radio" name="region" value="Muslim">Muslim
+                <input type="radio" name="region" value="Christian">Christian
+            </select>
+        </fieldset>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form><br>
+
+    <table border="1">
+        
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Gender</th>
+                <th>Hobbies</th>
+                <th>Region</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Ram</td>
+                    <td>ram43@gmail.com</td>
+                    <td>ram@123</td>
+                    <td>Male</td>
+                    <td>Reading</td>
+                    <td>Hindu</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>
