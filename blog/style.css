@@ -1,0 +1,389 @@
+/* ==========================================
+   style.css
+   Personal Blog Styles
+========================================== */
+
+/* ========= RESET ========= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--font-family);
+
+    background:var(--body-bg);
+
+    color:var(--text-dark);
+
+    line-height:var(--line-height);
+
+}
+
+/* ========= HEADER ========= */
+
+.header{
+
+    background:var(--brand-gradient);
+
+    color:var(--text-light);
+
+    text-align:center;
+
+    padding:var(--header-padding);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.header h1{
+
+    font-size:var(--header-title-size);
+
+    font-weight:var(--fw-extra-bold);
+
+    margin-bottom:var(--space-sm);
+
+}
+
+.welcome{
+
+    font-size:var(--font-md);
+
+}
+
+/* ========= MAIN ========= */
+
+.container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--gap);
+
+    max-width:var(--container-width);
+
+    margin:auto;
+
+    padding:var(--space-xl);
+
+}
+
+/* ========= SECTION HEADINGS ========= */
+
+section h2,
+article h2{
+
+    background:var(--brand-gradient);
+
+    color:white;
+
+    padding:.75rem;
+
+    border-radius:var(--radius-md);
+
+    margin-bottom:1rem;
+
+    text-align:center;
+
+}
+
+/* ========= QUOTES ========= */
+
+.quote-card{
+
+    background:var(--quote-bg);
+
+    padding:var(--space-xl);
+
+    border-left:6px solid var(--primary-color);
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-sm);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+}
+
+blockquote{
+
+    font-style:italic;
+
+    color:var(--heading-color);
+
+    font-size:var(--font-md);
+
+}
+
+/* ========= ARTICLE ========= */
+
+.blog-article{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--gap);
+
+    background:var(--card-bg);
+
+    padding:var(--space-xl);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========= PROFILE ========= */
+
+.profile{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:1rem;
+
+}
+
+.profile img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid var(--primary-color);
+
+    box-shadow:var(--shadow-md);
+
+    transition:var(--transition);
+
+}
+
+.profile img:hover{
+
+    transform:scale(var(--image-scale));
+
+}
+
+/* ========= TEXTAREA ========= */
+
+textarea{
+
+    width:100%;
+
+    min-height:var(--textarea-height);
+
+    resize:vertical;
+
+    padding:1rem;
+
+    font-family:inherit;
+
+    font-size:1rem;
+
+    background:var(--textarea-bg);
+
+    border:2px solid var(--primary-color);
+
+    border-radius:var(--radius-md);
+
+    outline:none;
+
+    line-height:1.8;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+/* ========= GALLERY ========= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:var(--gap);
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-md);
+
+    transition:var(--transition);
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ========= FOOTER ========= */
+
+footer{
+
+    background:var(--footer-bg);
+
+    padding:var(--footer-padding);
+
+    margin-top:2rem;
+
+}
+
+.footer-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1.5rem;
+
+}
+
+/* ========= FIELDSET ========= */
+
+fieldset{
+
+    border:2px solid white;
+
+    border-radius:var(--radius-md);
+
+    padding:1rem;
+
+}
+
+/* ========= LEGEND ========= */
+
+legend{
+
+    font-weight:bold;
+
+    color:black;
+
+    background:white;
+
+    padding:4px 12px;
+
+    border-radius:6px;
+
+}
+
+/* ========= FOOTER TEXT ========= */
+
+fieldset p{
+
+    color:white;
+
+    margin-bottom:.8rem;
+
+}
+
+/* ========= FOOTER LINKS ========= */
+
+fieldset a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+    word-break:break-word;
+
+}
+
+fieldset a:hover{
+
+    text-decoration:underline;
+
+    opacity:.85;
+
+}
+
+/* ========= RESPONSIVE ========= */
+
+/* Tablet */
+
+@media (min-width:768px){
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.profile{
+
+flex-direction:row;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+}
+
+/* Desktop */
+
+@media (min-width:1024px){
+
+.gallery{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
+.footer-container{
+
+flex-direction:row;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+}
+
+fieldset{
+
+flex:1;
+
+}
+
+.container{
+
+padding:3rem;
+
+}
+
+}

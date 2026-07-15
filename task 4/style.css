@@ -1,0 +1,247 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:var(--secondary-color);
+
+    color:var(--text-color);
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    line-height:1.6;
+
+}
+
+/* ================= Header ================= */
+
+header{
+
+    background:var(--primary-color);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+header h1{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+}
+
+/* ================= Main ================= */
+
+.container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--gap);
+
+    padding:20px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+/* ================= Quote ================= */
+
+.quote{
+
+    background:#f5f5f5;
+
+    border-left:5px solid var(--primary-color);
+
+    padding:20px;
+
+    border-radius:var(--radius);
+
+}
+
+.quote blockquote{
+
+    font-size:1.2rem;
+
+    font-style:italic;
+
+    margin-bottom:10px;
+
+}
+
+/* ================= Article ================= */
+
+article{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--gap);
+
+}
+
+article img{
+
+    width:100%;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+article h2{
+
+    color:var(--primary-color);
+
+}
+
+/* ================= Gallery ================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:var(--gap);
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ================= Footer ================= */
+
+footer{
+
+    background:var(--footer-color);
+
+    padding:25px;
+
+    margin-top:30px;
+
+}
+
+.footer-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:1rem;
+
+}
+
+fieldset{
+
+    border:2px solid white;
+
+    border-radius:10px;
+
+    padding:15px;
+
+}
+
+legend{
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:0 10px;
+
+}
+
+fieldset p{
+
+    color:white;
+
+}
+
+fieldset a{
+
+    color:white;
+
+    text-decoration:none;
+
+    word-break:break-word;
+
+}
+
+fieldset a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ================= Tablet ================= */
+
+@media (min-width:768px){
+
+.gallery{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ================= Desktop ================= */
+
+@media (min-width:1024px){
+
+.gallery{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
+.footer-container{
+
+flex-direction:row;
+
+justify-content:space-between;
+
+}
+
+fieldset{
+
+flex:1;
+
+}
+
+}
