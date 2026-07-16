@@ -274,7 +274,7 @@ footer{
 
 fieldset{
 
-    border:2px solid white;
+    border:2px solid rgb(255, 0, 0);
 
     border-radius:var(--radius-md);
 
@@ -302,7 +302,7 @@ legend{
 
 fieldset p{
 
-    color:white;
+    color:rgb(0, 0, 0);
 
     margin-bottom:.8rem;
 
@@ -312,7 +312,7 @@ fieldset p{
 
 fieldset a{
 
-    color:white;
+    color:rgb(255, 255, 255);
 
     text-decoration:none;
 
