@@ -1,0 +1,21 @@
+:root{
+
+--brand-color:#ffb347;
+--brand-dark:#ff9800;
+
+--background:#141414;
+--background-light:#222222;
+
+--white:#ffffff;
+
+--text:#d7d7d7;
+
+--radius:12px;
+
+--shadow:0 8px 20px rgba(255,179,71,.25);
+
+--transition:.4s;
+
+--font:Arial, Helvetica, sans-serif;
+
+}
