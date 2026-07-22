@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Echo</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 22px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <h1>Live Echo</h1>
+  <input type="text" id="username" placeholder="Enter your name">
+
+<h2 id="greeting">Hello!</h2>
+
+<script>
+const username = document.getElementById("username");
+const greeting = document.getElementById("greeting");
+
+username.addEventListener("input", function () {
+   if (username.value.trim() === "") {
+        greeting.textContent = "Hello!";
+    } else {
+        greeting.textContent = "Hello, " + username.value + "!";
+    }
+});
+</script>
+</body>
+</html>
