@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #counter {
+            font-size: 50px;
+            color: blue;
+            margin: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click Counter</h1>
+
+    <div id="counter">0</div>
+
+    <button onclick="increaseCounter()">Click Me</button>
+
+    <script>
+        let count = 0;
+
+        function increaseCounter() {
+            if (count < 10) {
+                count++;
+                document.getElementById("counter").textContent = count;
+            } else {
+                alert("Counter has reached its maximum value of 10!");
+            }
+            if (count === 10) {
+                document.getElementById("counter").style.color = "red";}
+            else {
+                document.getElementById("counter").style.color = "blue";
+            }
+        }
+    </script>
+
+</body>
+</html>
